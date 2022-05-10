@@ -40,9 +40,9 @@ Error Page: Page that displays an error for a non-existing title, or for an exis
 
 ## Getting Started
 
-Describe steps to install requirements and get the application running.
-	pip3 install Django
-	pip3 install markdown2
-	python manage.py runserver
-	The URL is available at http://127.0.0.1:8000/
+Describe steps to install requirements and get the application running\
+pip3 install Django\
+pip3 install markdown2\
+python manage.py runserver\
+The URL is available at http://127.0.0.1:8000/
 
