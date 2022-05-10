@@ -8,7 +8,7 @@ Entry Page: Visiting /wiki/TITLE, where TITLE is the title of an encyclopedia en
 	If the entry does exist, the user should be presented with a page that displays the content of the entry. The title of the page should include the name of the entry.
 	Actions to create the first pages: 
 	*each entry has to be added in encyclopedia/urls.py\
-	*each entry has to be added in encyclopedia/views.py\
+	*a general entry has to be added in encyclopedia/views.py\
 	*a new html page should be created in encyclopedia/templates/encyclopedia that can be used for all TITLE pages, to be filled with the information from the md file.\
 	![](sketches/entry_page.jpg)
 Index Page: The index page should supply a list of all the existing encyclopedia entries, using the list_entries util function. 
@@ -19,7 +19,6 @@ Search: Allow the user to type a query into the search box in the sidebar to sea
         If the query does not match the name of an encyclopedia entry, the user should instead be taken to a search results page that displays a list of all encyclopedia entries that 
 	have the query as a substring. For example, if the search query were Py, then Python should appear in the search results.
         Clicking on any of the entry names on the search results page should take the user to that entry’s page.\
-	*an entry has to be added in encyclopedia/urls.py\
 	*an entry has to be added in encyclopedia/views.py\
 	*a new html page should be created in encyclopedia/templates/encyclopedia
 	![](sketches/search_result_page.jpg)
@@ -30,17 +29,22 @@ New Page: Clicking “Create New Page” in the sidebar should take the user to 
         Otherwise, the encyclopedia entry should be saved to disk, and the user should be taken to the new entry’s page.
 	Actions to create a new page: \
 	*each entry has to be added in encyclopedia/urls.py\
+	*a general entry has to be added in encyclopedia/views.py\
 	*new md file has to be created in the entries folder
 	![](sketches/new_edit_page.jpg)
 Edit Page (extra): On each entry page, the user should be able to click a link to be taken to a page where the user can edit that entry’s Markdown content in a textarea.
         The textarea should be pre-populated with the existing Markdown content of the page. (i.e., the existing content should be the initial value of the textarea).
         The user should be able to click a button to save the changes made to the entry.
         Once the entry is saved, the user should be redirected back to that entry’s page.\
+	*a general entry has to be added in encyclopedia/urls.py\
+	*a general entry has to be added in encyclopedia/views.py\
 	*the changes are made in the md file for the page
 	![](sketches/new_edit_page.jpg)
 Random Page (extra): Clicking “Random Page” in the sidebar should take user to a random encyclopedia entry.\
 	*an entry has to be added in encyclopedia/views.py
 Error Page: Page that displays an error for a non-existing title, or for an existing new page
+	*a general entry has to be added in encyclopedia/urls.py\
+	*a general entry has to be added in encyclopedia/views.py\
 
 
 ## Getting Started
