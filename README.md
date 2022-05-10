@@ -6,7 +6,7 @@ Entry Page: Visiting /wiki/TITLE, where TITLE is the title of an encyclopedia en
 	The view should get the content of the encyclopedia entry by calling the get_entry util function.
 	If an entry is requested that does not exist, the user should be presented with an error page indicating that their requested page was not found.
 	If the entry does exist, the user should be presented with a page that displays the content of the entry. The title of the page should include the name of the entry.
-	Actions to create the first pages: 
+	Actions to create the first pages:\
 	*a general entry has to be added in encyclopedia/urls.py\
 	*a general entry has to be added in encyclopedia/views.py\
 	*a new html page should be created in encyclopedia/templates/encyclopedia that can be used for all TITLE pages, to be filled with the information from the md file.\
@@ -40,9 +40,6 @@ Edit Page (extra): On each entry page, the user should be able to click a link t
 	![](sketches/new_edit_page.jpg)
 Random Page (extra): Clicking “Random Page” in the sidebar should take user to a random encyclopedia entry.\
 	*an entry has to be added in encyclopedia/views.py
-Error Page: Page that displays an error for a non-existing title
-	*an entry has to be added in encyclopedia/urls.py\
-	*an entry has to be added in encyclopedia/views.py\
 
 
 ## Getting Started
