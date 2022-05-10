@@ -13,14 +13,16 @@ Entry Page: Visiting /wiki/TITLE, where TITLE is the title of an encyclopedia en
 	![](sketches/entry_page.jpg) 	
 Index Page: The index page should supply a list of all the existing encyclopedia entries, using the list_entries util function. 
 	A user can click on any entry name to be taken directly to that entry page.
+	*edit index.html to create links to the pages
 	![](sketches/index_page.jpg)
 Search: Allow the user to type a query into the search box in the sidebar to search for an encyclopedia entry.
 	If the query matches the name of an encyclopedia entry from the list_entries util function, the user should be redirected to that entry’s page.
         If the query does not match the name of an encyclopedia entry, the user should instead be taken to a search results page that displays a list of all encyclopedia entries that 
 	have the query as a substring. For example, if the search query were Py, then Python should appear in the search results.
         Clicking on any of the entry names on the search results page should take the user to that entry’s page.\
-	*an entry has to be added in encyclopedia/views.py\
-	*a new html page should be created in encyclopedia/templates/encyclopedia
+	*change layout.html for a post method
+	*an entry has to be added in encyclopedia/views.py. Use CSRFS token\
+	*a new html page should be created in encyclopedia/templates/encyclopedia for search results
 	![](sketches/search_result_page.jpg)
 New Page: Clicking “Create New Page” in the sidebar should take the user to a page where they can create a new encyclopedia entry.
         Users should be able to enter a title for the page and, in a textarea, should be able to enter the Markdown content for the page.
@@ -28,7 +30,7 @@ New Page: Clicking “Create New Page” in the sidebar should take the user to 
         When the page is saved, if an encyclopedia entry already exists with the provided title using the list_entries util function, the user should be presented with an error message.
         Otherwise, the encyclopedia entry should be saved to disk, and the user should be taken to the new entry’s page.
 	Actions to create a new page: \
-	*a new html page should be created in encyclopedia/templates/encyclopedia
+	*a new html page should be created in encyclopedia/templates/encyclopedia\
 	*new md file has to be created in the entries folder
 	![](sketches/new_edit_page.jpg)
 Edit Page (extra): On each entry page, the user should be able to click a link to be taken to a page where the user can edit that entry’s Markdown content in a textarea.
@@ -49,4 +51,6 @@ pip3 install Django\
 pip3 install markdown2\
 python manage.py runserver\
 The URL is available at http://127.0.0.1:8000/
+
+
 
