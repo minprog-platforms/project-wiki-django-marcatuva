@@ -20,8 +20,9 @@ Search: Allow the user to type a query into the search box in the sidebar to sea
         If the query does not match the name of an encyclopedia entry, the user should instead be taken to a search results page that displays a list of all encyclopedia entries that 
 	have the query as a substring. For example, if the search query were Py, then Python should appear in the search results.
         Clicking on any of the entry names on the search results page should take the user to that entry’s page.\
-	*change layout.html for a post method
-	*an entry has to be added in encyclopedia/views.py. Use CSRFS token\
+	*add an entry to urls.py.\
+	*change layout.html for a post method. Use CSRFS token\
+	*an entry has to be added in encyclopedia/views.py for search. \
 	*a new html page should be created in encyclopedia/templates/encyclopedia for search results
 	![](sketches/search_result_page.jpg)
 New Page: Clicking “Create New Page” in the sidebar should take the user to a page where they can create a new encyclopedia entry.

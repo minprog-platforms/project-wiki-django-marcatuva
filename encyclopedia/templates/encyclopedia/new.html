@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    New Page
+{% endblock %}
+
+{% block body %}
+    <h1>New Page</h1>
+    Enter the title and the content in MarkDown
+    <form action="{% url 'save' %}", method="post">
+        {% csrf_token %}
+        {{ new_form.as_p }}
+        <input type="submit" value="Save">
+    </form>
+    
+
+{% endblock %}
